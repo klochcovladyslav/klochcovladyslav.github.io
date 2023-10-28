@@ -1,0 +1,40 @@
+h1 {
+    font-family: "Kablammo", cursive;
+    text-align: center;
+    color: darkblue;
+    font-size: 3em;
+    text-shadow: 0px 0px 2px lightsalmon, 0px 0px 5px gray, 0px 0px 10px blue;
+}
+
+.top {
+    background-color: rgba(34, 66, 211, 0.254);
+    height: 35px;
+}
+
+a {
+    font-size: 1.4em;
+    color:  rgb(31, 31, 139);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.menu-item {
+    font-family: "Kablammo", cursive;
+    text-align: center;
+    background-color: rgba(34, 66, 211, 0.254);
+    margin: 3px;
+    padding: 10px;
+}
+a:visited {
+    color: rgb(31, 31, 139);
+}
+a:hover {
+letter-spacing: 4px;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img {
+    width: 80%;
+    margin: 20px;
+}
