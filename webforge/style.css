@@ -1,0 +1,260 @@
+body {
+  overflow-x: hidden;
+  margin: 0px;
+  font-family: "Comfortaa";
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 250px;
+}
+
+.oblozka {
+  background-color: black;
+}
+
+.navbar {
+  z-index: 1;
+  border-bottom: 2px solid azure;
+  padding: 0px;
+}
+
+.navbar ul a {
+  position: relative;
+  font-size: 18px;
+  color: azure;
+  transition: 0.25s;
+}
+
+
+.navbar li {
+  margin: 0px 5px;
+}
+
+.navbar ul a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca4a00;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.navbar ul a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar ul a:hover {
+  transform: scale(1.05);
+}
+
+.intro {
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-color: #181111;
+  height: 100%;
+
+  animation: fadeout 3.5s 1 linear forwards;
+}
+
+.introimg {
+  z-index: 3;
+  border: 10px solid black;
+  opacity: 1;
+  max-width: 800px;
+  animation: animmma 3s 1 linear forwards;
+}
+
+
+.oblyagach {
+  color: azure;
+  background-image: url(картинки/lBpfjq.jpg);
+
+}
+
+.colorfull {
+  color: orangered;
+  font-family: "Russo One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  text-shadow: 5px 7px 10px #181111, 0px 0px 10px #d73c03c4;
+
+}
+
+.bordered {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(61, 58, 56);
+}
+
+.colorfulless {
+  border-radius: 5px;
+  color: orangered;
+  font-family: "Russo One", sans-serif;
+  background-color: #18111172;
+  text-shadow: 5px 7px 10px #181111;
+}
+
+.borderr {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px 0px;
+  background-color: #18111172;
+}
+
+
+
+.listik {
+
+  font-family: "Russo One", sans-serif;
+  color: #e7b70b;
+  text-shadow: 2px 5px 3px #181811, 0px 0px 4px #90a613b7;
+}
+
+.knopka {
+
+  box-shadow: 0px 0px 10px #90a613;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.zwet {
+
+  color: #ffca0a;
+}
+
+
+.kartinka_blin {
+  width: 180px;
+}
+
+
+.cardss {
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 12px;
+  width: 250px;
+  align-items: center;
+  color: #181111;
+  text-shadow: 1px 1px 1px #0000005b;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5c412da;
+  box-shadow: 0px 0px 35px #ff8b2dee, 0px 0px 10px rgba(255, 231, 11, 0.651);
+}
+
+
+
+
+
+.othertext {
+
+  border-radius: 5px;
+  color: rgb(24, 216, 230);
+  font-family: "Russo One", sans-serif;
+  background-color: #18111172;
+  text-shadow: 5px 7px 10px #181111;
+
+}
+
+
+.just-text {
+  color: rgb(24, 216, 230);
+  font-family: "Russo One", sans-serif;
+  font-size: 24px;
+}
+
+.knopka2 {
+  box-shadow: 0px 0px 10px #27bee4e7;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bordered2 {
+  box-shadow: 5px 5px 5px #27bee4e7, 7px 7px 7px #283364e7;
+  border-radius: 2px;
+  transition: 0.25s;
+}
+
+.bordered2:hover {
+  transform: scale(1.02);
+}
+
+.oblozkazxzx{
+  background-color: #000000;
+  color: azure;
+  border-top: 2px solid azure;
+}
+
+
+a i{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+@keyframes animmma {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
