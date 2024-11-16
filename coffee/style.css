@@ -1,0 +1,150 @@
+.logo {
+    width: 70px;
+}
+
+.navbar {
+    background-color: #1C1814;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: #C99E71;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url(top-img.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: 70% 70%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.btn-taste {
+    background-color: #e89b4a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+}
+
+header p {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: "Comfortaa", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #14110E;
+    color: #ffffff;
+}
+
+.card-text {
+    background-color: #5e5c5bcb;
+    padding: 7px;
+    top: 40%;
+    left: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.coffee-card {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+.coffee-card:hover .card-text {
+    transform: translateX(0);
+}
+
+.number {
+    color: #df8f3b;
+    margin: 7px;
+    font-weight: 900;
+}
+
+.history-text {
+    background-color: #1C1814;
+    height: 100%;
+    padding: 70px 30px;
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+.orange-text {
+    color: #df8f3b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.drink-coffee {
+    margin: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hide-div {
+    padding: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1c1814af;
+    overflow-y: auto;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.drink {
+    top: 70%;
+    left: 0;
+    position: absolute;
+    background-color: #C99E71;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: 900;
+    font-family: "Play", sans-serif;
+    width: 100%;
+    padding: 15px;
+}
+
+.hide-title {
+    color: #C99E71;
+    border-bottom: 1px solid #C99E71;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+.gif{
+    background-color: #ddd;
+}
+
+.more-text{
+    display: none;
+}
+.read-more-btn, .read-min-btn{
+    text-decoration: underline;
+    color: #C99E71;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
