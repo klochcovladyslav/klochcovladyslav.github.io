@@ -1,0 +1,131 @@
+.swiper {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.swiper-card {
+
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+.swiper-card img,
+.swiper-card iframe {
+
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.swiper-card-1 {
+    transform: translateX(-50%) translateY(-8%) scale(0.8) rotateZ(15deg);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.swiper-card-2 {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.swiper-card-3 {
+    transform: translateX(50%) translateY(-8%) scale(0.8) rotateZ(-15deg);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.arrow-left,
+.arrow-right {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    height: 80%;
+    bottom: 10%;
+    z-index: 5;
+    border-radius: 15px;
+
+    background: rgba(52, 53, 53, 0.589);
+    color: azure;
+    box-shadow: inset 0px 0px 15px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: 0.8s;
+    font-size: 4em;
+    margin: 0;
+    border: 3px solid black;
+}
+
+.arrows p {
+    height: 85px;
+    text-align: center;
+
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+
+    background: #4576fcce;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+/* MEDIA-RULES */
+@media (max-width: 1000px) {
+
+    .swiper-card iframe,
+    .swiper-card img {
+        width: 448px;
+        height: 252px;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+    .swiper-card iframe,
+    .swiper-card img {
+        width: 400px;
+        height: 226px;
+    }
+
+    .main-menu-div {
+        display: block;
+    }
+
+    .arrow-right {
+        right: 35%;
+        height: 50px;
+        border-radius: 10px;
+        bottom: 5%;
+    }
+
+    .arrow-left {
+        left: 35%;
+        border-radius: 10px;
+
+        bottom: 5%;
+        height: 50px;
+    }
+}
