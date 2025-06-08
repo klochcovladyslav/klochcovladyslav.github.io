@@ -222,7 +222,5 @@ window.addEventListener('load', function () {
 // end of preloader
 
 // scroll reveal
-ScrollReveal().reveal('h2', { reset: false, origin: 'top', delay: 50, distance: '50px' });
 ScrollReveal().reveal('.card', { reset: true, delay: 300, origin: 'bottom', distance: '500px' });
-ScrollReveal().reveal('p', { reset: false, delay: 100, origin: 'bottom', distance: '50px' });
 // 
