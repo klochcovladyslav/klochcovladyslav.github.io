@@ -1,0 +1,259 @@
+ .row {
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+
+ .black-row {
+     background-color: #022f35;
+     color: whitesmoke;
+ }
+
+ .black-row .main-div-text {
+     padding-left: 15px;
+     padding-right: 0;
+ }
+
+ .row-wrap-reverse {
+     flex-wrap: wrap-reverse;
+ }
+
+ .main-div-text {
+     width: 350px;
+     text-align: justify;
+     padding-right: 15px;
+ }
+
+ .main-div-foto {
+     width: 350px;
+
+ }
+
+ .main-div-foto img {
+     border-radius: 3px;
+ }
+
+ .card-row {
+     justify-content: space-evenly;
+ }
+
+ .card {
+     display: flex;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     /* border: 2px solid black; */
+     width: 200px;
+     height: 200px;
+     margin: 15px;
+     border-radius: 5px;
+     cursor: pointer;
+
+ }
+
+ .card p {
+     position: absolute;
+     bottom: 0;
+     margin: 0;
+     padding: 5px;
+     font-size: 1.2em;
+     background-color: #022f35;
+     color: whitesmoke;
+     width: 100%;
+     text-align: center;
+     font-family: "Tektur";
+
+ }
+
+ .card img {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+
+
+ }
+
+ .card img:hover {
+     transform: scale(1.1);
+ }
+
+ .card-inside-bg {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.8);
+     z-index: 101;
+
+ }
+
+
+ .card-inside-div {
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+     background-color: whitesmoke;
+     padding: 25px;
+     border-radius: 10px;
+     width: 80%;
+     height: 80%;
+     padding: 15px;
+     overflow: scroll;
+ }
+
+ .card-inside-div::-webkit-scrollbar {
+     display: none;
+ }
+
+ .close-btn {
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: 25px;
+     right: 25px;
+     margin: 7px;
+     /* transform: rotate(-15deg); */
+     cursor: pointer;
+ }
+
+ .close-btn span {
+     content: " ";
+     width: 60px;
+     height: 10px;
+     border-radius: 3px;
+     background-color: #ea4a00;
+     position: absolute;
+     z-index: 100;
+ }
+
+ .close-span-1 {
+     transform: rotate(45deg);
+ }
+
+ .close-span-2 {
+     transform: rotate(-45deg);
+ }
+
+ .img-right-inside-div {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .div-link-btn {
+     transition: 0.5s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgb(48, 48, 237);
+ }
+
+ .div-link-btn:hover {
+     transform: scale(1.2);
+     background-color: rgb(0, 122, 236);
+     box-shadow: 0 0 15px rgb(0, 132, 255);
+ }
+
+ .div-link-btn a {
+     transition: 0.5s;
+     text-decoration: none;
+     font-size: 1.5em;
+     font-weight: bold;
+     width: 30px;
+     height: 30px;
+     margin: 15px;
+     transform: scale(1.3);
+     text-align: center;
+     color: whitesmoke;
+ }
+
+ .div-link-btn a:hover {
+     transform: translateY(-5px) scale(1.4);
+ }
+
+ .card-inside-img {
+     height: 500px;
+     width: 400px;
+     margin: 10px 0px;
+     position: relative;
+     box-shadow: 0px 0px 15px black;
+     border-radius: 15px;
+     transition: 0.5s;
+ }
+
+ .right-text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0px 15px;
+     width: 400px;
+     text-align: justify;
+ }
+
+ .right-text h2 {
+     background-color: #022f35;
+     color: whitesmoke;
+     text-transform: uppercase;
+     border-radius: 5px;
+     text-align: center;
+     font-weight: 400;
+     font-size: 1.8em;
+     padding: 5px;
+ }
+
+ @media (max-width: 1400px) {
+     .card-inside-img {
+         height: 450px;
+         width: 350px;
+         transition: 0.5s;
+     }
+
+ }
+
+
+
+
+
+ @media (max-width:729px) {
+     .main-div-text h2 {
+         text-align: center;
+     }
+
+     .card-inside-img {
+         width: 300px;
+         height: 400px;
+     }
+
+     .main-div-text {
+         padding: 0;
+     }
+ }
+
+ @media (max-width:426px) {
+
+     .card-inside-img {
+         width: 250px;
+         height: 350px;
+     }
+
+     .card {
+         width: 150px;
+         height: 150px;
+         margin: 10px 0px;
+     }
+ }

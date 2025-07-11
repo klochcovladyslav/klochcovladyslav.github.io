@@ -1,0 +1,219 @@
+header{
+    height: 80px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    background-color: #022f35;
+    color: #00e6ea;
+    text-shadow: 0px 0px 1px whitesmoke;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: content-box;
+    /* border-bottom: 5px solid #00e6ea; */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.div-logo {
+    margin-left: 25px;
+    padding: 5px 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+    background-color: #00e6ea;
+    color: #022f35;
+    box-shadow: 0px 0px 15px #00e6ea;
+    border-radius: 3px;
+
+}
+
+.div-logo span {
+    width: 175px;
+    height: 42px;
+}
+
+.div-header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.header-ul {
+    display: flex;
+    list-style: none;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.header-a {
+    padding: 0px 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #00fbff;
+    border: 2px solid #00e6ea;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.burger-button {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #00e6ea;
+    border-radius: 3px;
+    margin-right: 10px;
+    z-index: 101;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 5px #00e6ea;
+}
+
+.span-button {
+    content: " ";
+    width: 40px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #00e6ea;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+.span-button-1 {
+    top: 13.5px;
+}
+
+.span-button-2 {
+    top: auto;
+}
+
+.span-button-3 {
+    top: 37.5px;
+}
+
+
+
+
+
+
+/* hover */
+
+.header-a:hover {
+    background-color: #00e6ea;
+    color: #022f35;
+    box-shadow: 0px 0px 15px #00e6ea;
+    transform: rotate(5deg);
+}
+
+.header-a2:hover {
+    transform: rotate(-5deg);
+}
+
+
+/* exept toggle */
+
+
+
+
+/* DOM */
+@media (max-width:845px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .div-header-list {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        opacity: 0;
+        transition: 0.5s;
+        width: 100%;
+        height: 0;
+        /* display: none; */
+        z-index: -1;
+        top: 0;
+    }
+
+    .header-ul {
+        padding: 0;
+        transform: translateY(-100%);
+        flex-direction: column;
+    }
+
+    .header-li {
+        transform: scale(1.2);
+        margin: 25px 0px;
+    }
+
+    .header-a {
+        border-radius: 3px;
+        border: none;
+        border-bottom: 3px solid #00e6ea;
+    }
+
+    .burger-button {
+        display: flex;
+    }
+}
+
+
+
+
+/* js toggle */
+
+.burger-button-toggle {
+    box-shadow: inset 0px 0px 5px #00e6ea, 0px 0px 7px #00e6ea;
+}
+
+.span-button-1-toggle {
+    transform: rotate(45deg);
+    top: 25.5px;
+    bottom: 25.5px;
+    height: 4px;
+    box-shadow: 0px 0px 2px whitesmoke;
+}
+
+
+.span-button-2-toggle {
+    transform: scaleX(0.5);
+    opacity: 0;
+}
+
+
+.span-button-3-toggle {
+    transform: rotate(-45deg);
+    top: 25.5px;
+    bottom: 25.5px;
+    height: 4px;
+    box-shadow: 0px 0px 2px whitesmoke;
+}
+
+.div-header-list-toggle {
+    opacity: 100%;
+    /* display: flex; */
+    height: 100vh;
+}
+
+
+.header-ul-toggle {
+    transform: translateY(0%);
+}
+
+/*  */
