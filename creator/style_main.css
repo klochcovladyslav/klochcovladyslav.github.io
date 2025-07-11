@@ -238,14 +238,15 @@
          width: 300px;
          height: 400px;
      }
-
      .main-div-text {
          padding: 0;
      }
  }
 
  @media (max-width:426px) {
-
+.card-inside-div{
+width: 90%;
+}
      .card-inside-img {
          width: 250px;
          height: 350px;
