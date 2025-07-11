@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 15px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    border-top: 5px solid black;
+
+    box-shadow: inset 0px 20px 20px -15px black, inset 0px -20px 20px -15px black, 0px 0px 5px rgba(0, 0, 0, 0.534);
+    background: #581200;
+    background: radial-gradient(circle, rgba(214, 60, 22, 0.575) 0%, rgb(129, 22, 18) 100%);
+    padding: 15px;
+
+    color: rgb(245, 245, 245);
+    font-family: "Comfortaa";
+    font-weight: 600;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.footer-text-one, .footer-text-two{
+    padding: 15px;
+}
+.footer-text-one a i {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+}
+
+@media (max-width: 750px) {
+    .footer {
+        justify-content: left;
+    }
+}
