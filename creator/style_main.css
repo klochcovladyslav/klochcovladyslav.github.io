@@ -246,6 +246,7 @@
  @media (max-width:426px) {
 .card-inside-div{
 width: 90%;
+ height: 90%;
 }
      .card-inside-img {
          width: 250px;
